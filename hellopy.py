@@ -1,6 +1,4 @@
 import subprocess
-import pickle
 
-
-# Dangeroasdfsus use of subprocess
-subprocess.call("ls -la", shell=True)
+user_input = "ls -la"
+subprocess.call(user_input, shell=True)  # This should trigger a warning
