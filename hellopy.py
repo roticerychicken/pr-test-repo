@@ -1,3 +1,3 @@
 import subprocess
 
-print("asd3fasdfaasdfadfadfadfadfaasdfasdfasdfasdfdfasdfsdfasdasdfasdfasdsdfsad")
+print("asd3fasdfaadfdfasdfsdfasdasdfasdfasdsdfsad")
