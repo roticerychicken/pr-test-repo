@@ -1,10 +1,10 @@
 import subprocess
 import pickle
 
-def run_command(user_input):
-    # 🚩 Insecure use of subprocess with shell=True
-    subprocess.call(user_input, shell=True)
 
-def deserialize_data(data):
-    # 🚩 Insecure use of pickle.loads on untrusted input
-    return pickle.loads(data)
+# Dangerous use of subprocess
+subprocess.call("ls -la", shell=True)
+
+# Dangerous use of pickle
+malicious_data = b"cos\nsystem\n(S'echo hacked'\ntR."
+pickle.loads(malicious_data)
